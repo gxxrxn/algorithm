@@ -4,11 +4,11 @@ function solution(n, k) {
 }
 
 function isPrime(number) {
-  if (number <= 1) {
+  if (number <= 2) {
     return false;
   }
 
-  for (let i = 2; i <= Math.sqrt(number); i++) {
+  for (let i = 3; i <= Math.sqrt(number); i += 2) {
     if (number % i === 0) {
       return false;
     }
